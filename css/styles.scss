@@ -1,0 +1,177 @@
+/* FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Montserrat, Sans-serif;
+    margin: 0;
+    
+    a {
+        text-decoration: none;
+        color: #c6d445;
+    }
+    
+    header {
+        position: fixed;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        .logo {
+            display: flex;
+            flex-direction: row;
+            height: fit-content;
+            
+            .tel {
+                display: inline-block;
+                padding: 10px 15px;
+                height: 25px;
+                background-color: #4e79ec;
+                color: #fff;
+                border-radius: 5px;
+                transition: border-radius .2s ease-in-out;
+                margin-right: 50px;
+                
+                &:hover {
+                    border-radius: 50px;
+                }
+                
+                span {
+                    margin-right: 5px;
+                }
+            }
+            
+            h1 {
+                vertical-align: top;
+                margin: 0;
+                height: fit-content;
+                color: #000;
+
+                a img {
+                    vertical-align: text-top;
+                    height: 35px;
+                    width: auto;
+                }
+            }
+        }
+
+        nav {
+            ul {
+                margin: 0;
+                display: flex;
+
+                li {
+                    list-style: none;
+                    text-align: center;
+                    padding: 12px 60px 12px 5px;
+                    cursor: pointer;
+                    background-color: #4e79ec;
+                    border-radius: 0;
+                    transition: border-radius .2s ease-in-out;
+
+                    &:nth-child(1) {
+                        border-bottom-left-radius: 5px;
+                    }
+
+                    &:hover {
+                        border-radius: 50px;
+                    }
+
+
+                    a {
+                        color: #000;
+                    }
+                
+                }
+                ul.dropdown {
+                    display: none;
+                    flex-direction: column;
+                    position: absolute;
+                }
+
+                li.dropdown {
+                    border-radius: 0;
+                }
+
+                li.dropdown:hover  ul.dropdown {
+                    display: block;
+                    padding-left: 0;
+                    
+                    li {
+                        padding: 10px 0;
+                    }
+                }
+            }
+        }
+    }
+
+
+    footer {
+        display: flex;
+        flex-direction: column;
+
+
+        div.link {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            background-color: #434D59;
+
+            ul {   
+                padding: 0;
+            
+                li {
+                    list-style-type: none;
+                }
+            }
+            
+            .logo {
+    
+                .tel {
+                    display: inline-block;
+                    padding: 10px 15px;
+                    height: 25px;
+                    background-color: #4e79ec;
+                    color: #fff;
+                    border-radius: 5px;
+                    transition: border-radius .2s ease-in-out;
+                    margin-right: 50px;
+    
+                    &:hover {
+                        border-radius: 50px;
+                    }
+                    
+                    span {
+                        margin-right: 5px;
+                    }
+                }
+                
+                h2 {
+                    vertical-align: top;
+                    margin: 0;
+                    height: fit-content;
+    
+                    a img {
+                        vertical-align: text-top;
+                        height: 35px;
+                        width: auto;
+                    }
+                }
+            }
+        }
+
+        .copyright {
+            background-color: #31373F;
+            width: 100%;
+            text-align: center;
+            color: #fff;
+        }
+    }
+
+}
+
+

@@ -1,0 +1,204 @@
+/* FONT IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Montserrat, Sans-serif;
+  margin: 0;
+}
+
+body a {
+  text-decoration: none;
+  color: #c6d445;
+}
+
+body header {
+  position: fixed;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+body header .logo .tel {
+  display: inline-block;
+  padding: 10px 15px;
+  height: 25px;
+  background-color: #4e79ec;
+  color: #fff;
+  border-radius: 5px;
+  -webkit-transition: border-radius .2s ease-in-out;
+  transition: border-radius .2s ease-in-out;
+  margin-right: 50px;
+}
+
+body header .logo .tel:hover {
+  border-radius: 50px;
+}
+
+body header .logo .tel span {
+  margin-right: 5px;
+}
+
+body header .logo h1 {
+  vertical-align: top;
+  margin: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: #000;
+}
+
+body header .logo h1 a img {
+  vertical-align: text-top;
+  height: 35px;
+  width: auto;
+}
+
+body header nav ul {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header nav ul li {
+  list-style: none;
+  text-align: center;
+  padding: 12px 60px 12px 5px;
+  cursor: pointer;
+  background-color: #4e79ec;
+  border-radius: 0;
+  -webkit-transition: border-radius .2s ease-in-out;
+  transition: border-radius .2s ease-in-out;
+}
+
+body header nav ul li:nth-child(1) {
+  border-bottom-left-radius: 5px;
+}
+
+body header nav ul li:hover {
+  border-radius: 50px;
+}
+
+body header nav ul li a {
+  color: #000;
+}
+
+body header nav ul ul.dropdown {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+}
+
+body header nav ul li.dropdown {
+  border-radius: 0;
+}
+
+body header nav ul li.dropdown:hover ul.dropdown {
+  display: block;
+  padding-left: 0;
+}
+
+body header nav ul li.dropdown:hover ul.dropdown li {
+  padding: 10px 0;
+}
+
+body footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body footer div.link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #434D59;
+}
+
+body footer div.link ul {
+  padding: 0;
+}
+
+body footer div.link ul li {
+  list-style-type: none;
+}
+
+body footer div.link .logo .tel {
+  display: inline-block;
+  padding: 10px 15px;
+  height: 25px;
+  background-color: #4e79ec;
+  color: #fff;
+  border-radius: 5px;
+  -webkit-transition: border-radius .2s ease-in-out;
+  transition: border-radius .2s ease-in-out;
+  margin-right: 50px;
+}
+
+body footer div.link .logo .tel:hover {
+  border-radius: 50px;
+}
+
+body footer div.link .logo .tel span {
+  margin-right: 5px;
+}
+
+body footer div.link .logo h2 {
+  vertical-align: top;
+  margin: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+body footer div.link .logo h2 a img {
+  vertical-align: text-top;
+  height: 35px;
+  width: auto;
+}
+
+body footer .copyright {
+  background-color: #31373F;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+/*# sourceMappingURL=styles.css.map */

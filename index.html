@@ -8,8 +8,9 @@
 		<meta charset="UTF-8" />
 
 		<!-- Custom-Files -->
-		<link href="css/font-awesome.min.css" rel="stylesheet">
-
+		<link href="./fonts/" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/74a3136971.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="./css/styles.css">
 	</head>
 
 	<body>
@@ -17,32 +18,23 @@
 		<div id="home">
 			<!-- haut de page -->
 			<header>
-				<div>
+				<div class="logo">
 					<!-- numero de telephone -->
-					<p><span class="fa fa-volume-control-phone"></span>+331 20 20 20 20</p>
+					<a class="tel" href="tel:+33120202020"><span class="fa fa-volume-control-phone"></span>+331 20 20 20 20</a>
 					
 					<!-- logo -->
-					<h1><a href="index.html">Gravizen<img src="images/logo.png" alt=" "></a></h1>
+					<h1><a href="index.html">Gravizen<img src="images/logo.png" alt="logo"></a></h1>
 				</div>
-			</header>
-			<!-- haut de page -->
-			<!-- menu de navigation -->
-			<div>
+
+				<!-- haut de page -->
+				<!-- menu de navigation -->
 				<nav>
-					<label for="drop">Menu</label>
-					<input type="checkbox" id="drop" />
 					<ul>
 						<li><a href="index.html">Accueil</a></li>
 						<li><a href="#about">A Propos</a></li>
 						<li><a href="#services">Services</a></li>
-						<li>
-							<!-- Menu deroulant -->
-							<label for="drop-2">Application <span class="fa fa-angle-down"
-									aria-hidden="true"></span>
-							</label>
-							<a href="#">Application <span class="fa fa-angle-down" aria-hidden="true"></span></a>
-							<input type="checkbox" id="drop-2" />
-							<ul>
+						<li class="dropdown">Application <span class="fa fa-angle-down" aria-hidden="true"></span>
+							<ul class="dropdown">
 								<li><a href="#application">Télécharger l'appli</a></li>
 								<li><a href="#appointment">Réserver en ligne</a></li>
 							</ul>
@@ -51,8 +43,8 @@
 						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</nav>
-			</div>
-			<!-- //menu de navigation -->
+				<!-- //menu de navigation -->
+			</header>
 
 			<!-- bannière d'accueil -->
 			<div>
@@ -353,68 +345,73 @@
 
 		<!-- pied de page -->
 		<footer>
-			<div>
-				<h2>
-					<a href="index.html">
-						Gravizen
-						<img src="images/logo.png" alt=" ">
-					</a>
-				</h2>
-				<p>
-					<a href="mailto:contact@gravizen.com">contact@gravizen.com</a>
-				</p>
-				<p>+331 20 20 20 20</p>
-			</div>
-			<div>
-				<h3>Navigation</h3>
-				<ul>
-					<li>
+			<div class="link">
+				<div class="logo">
+					<h2>
 						<a href="index.html">
-							Accueil
+							Gravizen
+							<img src="images/logo.png" alt=" ">
 						</a>
-					</li>
-					<li>
-						<a href="#services">
-							Nos soins
-						</a>
-					</li>
-					<li>
-						<a href="#news">
-							Blog
-						</a>
-					</li>
-					<li>
-						<a href="#contact">
-							Contact
-						</a>
-					</li>
-				</ul>
+					</h2>
+					<p>
+						<a href="mailto:contact@gravizen.com">contact@gravizen.com</a>
+					</p>
+					<a class="tel" href="tel:+33120202020">+331 20 20 20 20</a>
+				</div>
+				<div>
+					<h3>Navigation</h3>
+					<ul>
+						<li>
+							<a href="index.html">
+								Accueil
+							</a>
+						</li>
+						<li>
+							<a href="#services">
+								Nos soins
+							</a>
+						</li>
+						<li>
+							<a href="#news">
+								Blog
+							</a>
+						</li>
+						<li>
+							<a href="#contact">
+								Contact
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h3>Médecins</h3>
+					<ul>
+						<li>
+							<a href="#doctors">
+								Dr. Teva britsner
+							</a>
+						</li>
+						<li>
+							<a href="#doctors">
+								Dr. Elisa dupont
+							</a>
+						</li>
+						<li>
+							<a href="#doctors">
+								Dr. Rinto dabesa
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-			<div>
-				<h3>Médecins</h3>
-				<ul>
-					<li>
-						<a href="#doctors">
-							Dr. Teva britsner
-						</a>
-					</li>
-					<li>
-						<a href="#doctors">
-							Dr. Elisa dupont
-						</a>
-					</li>
-					<li>
-						<a href="#doctors">
-							Dr. Rinto dabesa
-						</a>
-					</li>
-				</ul>
-			</div>
+			
+			<!-- Copyright -->
+			<div class="copyright">
+				<p> &copy; 2021 Gravizen. Tout droit réservés | Par Pseudo </p>
+			</div> 	
 		</footer>
 		<!-- //Pied de page -->
 
-		<!-- Copyright -->
-		<p> © 2021 Gravizen. Tout droit réservés | Par Pseudo </p>
 		
 		<a href="#home">
 			<span aria-hidden="true"></span>
